@@ -52,7 +52,7 @@ def calculateScore(ref_align_path, translation_align_paths, src_path, ref_path, 
         
             for token_idx, token in enumerate(tokens):
                 token = token.lower()
-                # Only calculate words in the given list
+                # Only calculate words in the given list 
                 if token in word_list:
                     if token not in translation_score:
                         translation_score[token] = [0, 0, 0]
