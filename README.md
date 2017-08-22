@@ -37,7 +37,7 @@ You get
 translation_0      0.401     0.422     0.382
 translation_1      0.426     0.449     0.405
 ```
-Running
+Running with allwords list
 ```
 python evaluate.py -ra src-ref.align -ta src-translation1.align -s src.txt -r ref.txt -t translation1.txt -w allwords_list.txt
 ```
