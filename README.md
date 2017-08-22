@@ -24,8 +24,18 @@ Details of running fast\_align can be found [here](https://github.com/clab/fast_
 * python 3
 
 ## Usage 
+
+To generate Table 3. for en-de on homographs. 
 ```
 python evaluate.py -ra src-ref.align -ta src-translation1.align -s src.txt -r ref.txt -t translation1.txt -w homograph_list.txt
+```
+
+You get
+```
+                f1-score precision    recall
+
+translation_0      0.401     0.422     0.382
+translation_1      0.426     0.449     0.405
 ```
 For the all words results of the paper, we extract the 50000 tokens from our English dictionary for our neural model filtering out non-english words as our word list.
 
